@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="nav">
+      <!-- <img src="https://i.pinimg.com/originals/82/c6/5b/82c65b9bb0a75026fc4c82a438b4cc9b.jpg" alt=""> -->
+      <h1>Logo</h1>
+      <ul class="sidebar">
+       <li onclick = hideSidebar()> <i class="ri-close-line"></i></li>
+        <li>home</li>
+        <li>service</li>
+        <li>product</li>
+        <li>about</li>
+       
+      </ul>
+      <ul>
+        <li>home</li>
+        <li>service</li>
+        <li>product</li>
+        <li>about</li>
+        <li  onclick = showSidebar()><i class="ri-menu-line"></i></li>
+      </ul>
+    </div>
+  </div>
+  <script> 
+       function showSidebar(){
+       const sidebar = document.querySelector(".sidebar");
+       sidebar.style.display="flex";
+  }
+  function hideSidebar(){
+    const sidebar = document.querySelector(".sidebar");
+       sidebar.style.display="none";
+  }
+  </script>
+</body>
+
+</html>
